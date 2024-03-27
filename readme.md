@@ -22,9 +22,9 @@ The app includes the following features:
 - User registration and authentication
 - Todo creation and management
 - Task prioritization and categorization
-- Due date tracking
-- Collaboration and sharing with other users
-- Real-time updates and notifications
+- Due date tracking -- UPCOMING
+- Collaboration and sharing with other users -- UPCOMING
+- Real-time updates and notifications -- UPCOMING
 
 ## Getting Started
 
