@@ -49,9 +49,9 @@ export function buildCard(todoTitle) {
     div.classList.add('card', 'd-inline-block');
     div.style = "width: 25rem;";
     div.innerHTML = `
-        <div id="${todoTitle.docId}" class="card-body">
-            <button class="btn btn-outline-primary">+</button>
-            <span class="fs-3 card-title">${todoTitle.title}</span>
+        <div id="${todoTitle.docId}" class="card-body bg-info bg-opacity-75%">
+            <button class="btn btn-light bg-45">+</button>
+            <span class="fs-3 card-title ">${todoTitle.title}</span>
         </div>
     `;
     const expandButton = div.querySelector('button');

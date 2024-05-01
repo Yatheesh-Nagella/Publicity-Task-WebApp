@@ -64,3 +64,9 @@ export async function deleteToDoItem(itemId) {
     const docRef = doc(db, TODO_ITEM_COLLECTION, itemId);
     await deleteDoc(docRef);
 }
+
+// delete a todo title from the firestore by uid
+export async function deleteToDoTitle(uid) {
+    const docRef = doc(db, TODO_TITLE_COLLECTION, uid);
+    await deleteDoc(docRef);
+}
