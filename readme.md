@@ -29,6 +29,12 @@ The app includes the following features:
 
 To run the app locally, follow these steps:
 
+#### Pre-requisites:
+Installing firebase CLI:
+
+``` https://firebase.google.com/docs/cli/ ```
+
+
 1. Clone the repository.
 2. Install the necessary dependencies.
 3. Set up the Firebase project and configure the app with the Firebase credentials.
