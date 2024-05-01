@@ -69,4 +69,29 @@ export async function Menu2PageView() {
             }
         });
     });
+
+    // Search functionality
+    const searchInput = divWrapper.querySelector('#searchInput');
+    const searchButton = divWrapper.querySelector('#searchButton');
+
+    searchButton.addEventListener('click', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredTasks = taskLists.filter(task => task.title.toLowerCase().includes(searchTerm));
+
+        // Clear the table body
+        tbody.innerHTML = '';
+
+        // Populate the table with filtered tasks
+        filteredTasks.forEach((task, index) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${currentUser.email}</td>
+                <td>${task.title}</td>
+                <td>${new Date(task.timestamp).toLocaleString()}</td>
+                <td><button class="delete-task-btn" data-doc-id="${task.docId}">Delete</button></td>
+            `;
+            tbody.appendChild(tr);
+        });
+    });
 }

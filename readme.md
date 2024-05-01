@@ -12,7 +12,6 @@ The app is built using the following technologies:
 4. Firebase Datastore - A cloud-based NoSQL database used for storing and retrieving todo data.
 5. Firebase Authentication - A service used for authenticating users and securing the app.
 6. Firebase Hosting - A service used for deploying the app to the web.
-7. Firebase Cloud Messaging - A service used for sending real-time updates and notifications to users.
 8. Git - A version control system used for tracking changes in the app's codebase.
 
 ## Features
@@ -22,9 +21,9 @@ The app includes the following features:
 - User registration and authentication
 - Todo creation and management
 - Task prioritization and categorization
-- Due date tracking -- UPCOMING
-- Collaboration and sharing with other users -- UPCOMING
-- Real-time updates and notifications -- UPCOMING
+- Due date tracking 
+- Task completion and deletion
+- Search and filter functionality
 
 ## Getting Started
 

@@ -9,7 +9,7 @@ import { ToDoItem } from "../model/ToDoItem.js";
 // onsubmit event handler for the create form
 export async function onSubmitCreateForm(e) {
     e.preventDefault();
-    const title = e.target.title.value;
+    const title = e.target.title.value.toLowerCase().trim();
     const uid = currentUser.uid;
     const timestamp = Date.now();
     const todoTitle = new ToDoTitle({ title, uid, timestamp });
