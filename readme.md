@@ -1,4 +1,4 @@
-# Centralized Work Management App
+# Publicity Task Web App
 
 This is a centralized work management app that allows users to create and manage their todos in order to be productive.
 
